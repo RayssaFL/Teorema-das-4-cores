@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coloração do Mapa do Brasil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Coloração do Mapa do Brasil</h1>
+      <p>Algoritmo Guloso aplicado ao problema das 4 cores</p>
+    </header>
+
+    <main>
+      <section class="map-container">
+        <h2>Mapa das Unidades Federativas</h2>
+        <div id="map"></div>
+      </section>
+      <aside class="info">
+        <h2>Informações</h2>
+        <div class="card">
+          <h3>Algoritmo</h3>
+          <p>Algoritmo Guloso (Greedy)</p>
+        </div>
+        <div class="card">
+          <h3>Estados</h3>
+          <p>27 Unidades da Federação</p>
+        </div>
+        <div class="card">
+          <h3>Cores disponíveis</h3>
+          <div class="colors">
+            <div class="color color1"></div>
+            <div class="color color2"></div>
+            <div class="color color3"></div>
+            <div class="color color4"></div>
+          </div>
+        </div>
+        <div class="card" id="state-info">
+          <h3>Selecione um estado</h3>
+          <p>Clique em um estado no mapa para visualizar suas informações.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Trabalho 02 - Feito por Rayssa Fialho e Luana Oliveira</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
